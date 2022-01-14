@@ -1,3 +1,6 @@
+# ######### #
+# facade.py #
+# ######### #
 # ######## Facade ######## #
 class Monitoring():
     def __init__(self):
@@ -36,3 +39,17 @@ class Transaction():
     
     def most(self):
         print("These are the most transaction : Buy Book , Send Email")
+
+
+
+
+# ######## #
+# index.py #
+# ######## #
+
+# ######## Client ######## #
+
+from facade import Monitoring
+
+monitoring = Monitoring()
+monitoring.statistics()
