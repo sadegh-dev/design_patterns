@@ -22,3 +22,17 @@ class MyUser():
         print("These are the newest users : Charlie , John")
 
 
+class Viewer():
+    def __init__(self):
+        print("create new object of Viewer")
+    
+    def popularpages(self):
+        print("These are the popular pages : home , category")
+
+
+class Transaction():
+    def __init__(self):
+        print("create new object of Transaction")
+    
+    def most(self):
+        print("These are the most transaction : Buy Book , Send Email")
