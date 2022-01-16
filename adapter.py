@@ -18,9 +18,10 @@ class System:
         else:
             print("You not allowed to config the system...")
 
+
 ######################################
 
-u1 = User('cha552',False)
+u1 = User('cha552',True)
 o1 = Operator('10',u1)
 sys1 = System(o1)
 
