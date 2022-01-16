@@ -1,9 +1,3 @@
-p1 = Person('charlie', '123456')
-c1 = Car('456321',p1)
-g1 = Garage(c1)
-
-g1.exitـpermission()
-##############################3
 class User:
     def __init__(self, username, is_admin):
         self.username = username
@@ -26,6 +20,10 @@ class System:
 
 ######################################
 
-p1 = 
+u1 = User('cha552',True)
+o1 = Operator('10',u1)
+sys1 = System(o1)
+
+o1.config()
 
 
