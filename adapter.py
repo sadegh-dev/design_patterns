@@ -16,14 +16,14 @@ class System:
         if self.operator.user.is_admin == True :
             print('You are allowed to config the system...')
         else:
-            print("You aren't allowed to config the system...")
+            print("You not allowed to config the system...")
 
 ######################################
 
-u1 = User('cha552',True)
+u1 = User('cha552',False)
 o1 = Operator('10',u1)
 sys1 = System(o1)
 
-o1.config()
+sys1.config()
 
 
