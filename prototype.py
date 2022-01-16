@@ -22,4 +22,18 @@ class Prototype:
 
 serv1 = Server('102.203.605.300','4040')
 
-#
+# Copy Server details
+
+storage = Prototype()
+
+storage.register('100.200.300.400', serv1)
+serv2 = storage.clone('100.200.300.400')
+
+storage.register('101.202.303.404', serv1)
+serv3 = storage.clone('101.202.303.404', ip='5060')
+
+# whow data storage
+
+print( serv1.__dict__ )
+print( serv2.__dict__ )
+print( serv3.__dict__ )
