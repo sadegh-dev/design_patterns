@@ -41,7 +41,7 @@ class Mongodb(Database):
 def project(db):
     return db.call_create()
 
-#########################
+# RUN ####################
 
 print(project(Sql()))
 print(project(Nosql()))
