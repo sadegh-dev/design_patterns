@@ -9,5 +9,14 @@ class Proxy :
             c1 = ConnectToDb()
             return c1
         else :
+            print('Access Denied ..!')
             return None
 
+
+connect1 = Proxy()
+
+flag_admin = True
+connect1.check_admin(flag_admin)
+
+flag_admin = False
+connect1.check_admin(flag_admin)
