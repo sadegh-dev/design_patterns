@@ -8,4 +8,6 @@ class Proxy :
         if is_admin :
             c1 = ConnectToDb()
             return c1
-        
+        else :
+            return None
+
