@@ -11,8 +11,7 @@ class iterator:
         while self.index > 0 :
             now_index = self.index
             self.index -= self.step
-            
-
+            return now_index
 
 
 class CustomCounter:
@@ -22,3 +21,7 @@ class CustomCounter:
     
     def __iter__(self):
         pass
+
+
+
+
