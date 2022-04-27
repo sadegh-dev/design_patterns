@@ -23,9 +23,21 @@ class CustomCounter:
         return iterator(self.up, self.step)
 
 
+# Example 1
 f1 = CustomCounter(9)
 f2 = iter(f1)
 print(next(f2))
 print(next(f2))
 print(next(f2))
 
+
+# Example 2
+
+e1 = CustomCounter(12,3)
+e2 = iter(e1)
+print(next(e2))
+print(next(e2))
+print(next(e2))
+print(next(e2))
+print(next(e2))
+print(next(e2))
