@@ -1,3 +1,7 @@
+class iterator:
+    def __init__(self, index, step):
+        self.index = index
+        self.step = step
 
 
 
