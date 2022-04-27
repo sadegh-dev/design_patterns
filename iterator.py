@@ -1,7 +1,12 @@
 class iterator:
+    
     def __init__(self, index, step):
         self.index = index
         self.step = step
+    
+    def __next__(self):
+        if self.index == 0 :
+            return None
 
 
 
