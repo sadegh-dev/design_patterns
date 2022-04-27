@@ -7,8 +7,9 @@ class iterator:
     def __next__(self):
         if self.index == 0 :
             return None
-        for x in range(0, self.index, -self.step ):
-            pass
+        
+        while self.index > 0 :
+            pass 
 
 
 
