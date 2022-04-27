@@ -1,6 +1,6 @@
 class iterator:
     
-    def __init__(self, index, step=1):
+    def __init__(self, index, step):
         self.index = index
         self.step = step
     
@@ -15,13 +15,17 @@ class iterator:
 
 
 class CustomCounter:
-    def __init__(self, up, step):
+    def __init__(self, up, step=1):
         self.up = up
         self.step = step
     
     def __iter__(self):
-        pass
+        return iterator(self.up, self.step)
 
 
-
+f1 = CustomCounter(9)
+f2 = iter(f1)
+print(next(f2))
+print(next(f2))
+print(next(f2))
 
