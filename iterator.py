@@ -9,7 +9,9 @@ class iterator:
             return None
         
         while self.index > 0 :
-            pass 
+            now_index = self.index
+            self.index -= self.step
+            
 
 
 
