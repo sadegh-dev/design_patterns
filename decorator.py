@@ -7,13 +7,13 @@ def admin(func):
             print('You do not have permission to run this function.')
     return check_admin
 
-####################
+##################
 
 @admin
 def work():
     print('work function ir RUN.')
 
-####################
+##################
 
 work()
 
